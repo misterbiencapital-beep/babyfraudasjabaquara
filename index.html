@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grupo Baby Fraldas Jabaquara | Fraldas infantis e geriátricas</title>
+<meta name="description" content="Fraldas infantis e geriátricas, mamadeiras e produtos de higiene e cuidado no Jabaquara. Atendimento domiciliar, clínicas e casas de repouso.">
+<style>
+:root{--y:#FFD21F;--y2:#FFF3B0;--b:#4B3FD1;--p:#2B1A6B;--w:#fff;--ink:#241a4d;--soft:#F5F3FF;--r:18px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font:17px/1.6 "Trebuchet MS","Segoe UI",Verdana,sans-serif;color:var(--ink);background:var(--w)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--p);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin:auto}
+h1,h2,h3{line-height:1.15;color:var(--p)}
+h2{font-size:clamp(1.7rem,4.5vw,2.5rem);margin-bottom:.5em}
+section{padding:64px 0}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--p);color:var(--w);border:3px solid var(--p)}
+.btn.y{background:var(--y);color:var(--p);border-color:var(--p)}
+.btn.o{background:transparent;color:var(--p)}
+.btn:hover{transform:translateY(-2px)}
+header{position:sticky;top:0;z-index:20;background:var(--w);border-bottom:4px solid var(--y)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0}
+.bar img{height:58px;width:auto}
+nav ul{display:flex;gap:6px;list-style:none;padding:0}
+nav a{display:block;padding:8px 12px;border-radius:999px;text-decoration:none;font-weight:700;color:var(--p)}
+nav a:hover{background:var(--y)}
+#mb{display:none;background:var(--y);border:3px solid var(--p);border-radius:12px;padding:8px 14px;font:700 1rem inherit;color:var(--p)}
+.hero{background:var(--y);padding:48px 0 0;overflow:hidden}
+.hero .wrap{display:grid;gap:28px;align-items:end}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem)}
+.hero p{font-size:1.25rem;margin:14px 0 24px;max-width:30ch;color:var(--p)}
+.hero .btns{display:flex;flex-wrap:wrap;gap:12px;padding-bottom:36px}
+.hero figure{border-radius:var(--r) var(--r) 0 0;overflow:hidden;border:4px solid var(--p);border-bottom:0;background:var(--w)}
+.two{display:grid;gap:28px;align-items:center}
+.pics{display:grid;gap:16px}
+.pics img,.card img{border-radius:var(--r);border:3px solid var(--p);background:var(--w);width:100%}
+.alt{background:var(--soft)}
+ul.ticks{list-style:none;padding:0;display:grid;gap:8px;margin:16px 0}
+ul.ticks li{padding-left:34px;position:relative}
+ul.ticks li:before{content:"";position:absolute;left:0;top:.35em;width:20px;height:20px;border-radius:50%;background:var(--y);border:3px solid var(--p)}
+.geri{background:var(--b);color:var(--w)}
+.geri h2,.geri h3{color:var(--w)}
+.geri .pics{grid-template-columns:1fr 1fr}
+.geri .pics img{border-color:var(--y)}
+.brands{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:18px 0}
+.brands li{background:var(--y);color:var(--p);font-weight:700;padding:8px 18px;border-radius:999px}
+.home{background:var(--p);color:var(--w);text-align:center}
+.home h2{color:var(--y);font-size:clamp(2rem,6vw,3.4rem);letter-spacing:.02em}
+.home p{max-width:52ch;margin:0 auto 24px}
+.grid{display:grid;gap:16px}
+.box{border:3px solid var(--p);border-radius:var(--r);padding:22px;background:var(--w)}
+.box:nth-child(odd){background:var(--y2)}
+.box h3{font-size:1.2rem;margin-bottom:6px}
+.contact dl{display:grid;gap:14px;margin:20px 0}
+.contact dt{font-weight:700;color:var(--b)}
+.contact dd{margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.hide{display:none!important}
+footer{background:var(--p);color:var(--w);padding:44px 0 24px}
+footer .grid{gap:28px}
+footer img{height:70px;width:auto;background:var(--w);border-radius:12px;padding:6px}
+footer h3{color:var(--y);font-size:1.1rem;margin-bottom:8px}
+footer ul{list-style:none;padding:0;display:grid;gap:6px}
+footer a{text-decoration:none}footer a:hover{text-decoration:underline}
+.copy{margin-top:28px;padding-top:16px;border-top:1px solid #ffffff44;font-size:.9rem}
+.wa{position:fixed;right:14px;bottom:14px;z-index:30;box-shadow:0 4px 14px #0004}
+@media(min-width:800px){
+.hero .wrap{grid-template-columns:1fr 1.1fr}
+.two{grid-template-columns:1fr 1fr}
+.two.rev>:first-child{order:2}
+.pics.c2{grid-template-columns:1fr 1fr}
+.grid.g3{grid-template-columns:repeat(3,1fr)}
+.grid.g4{grid-template-columns:repeat(4,1fr)}
+footer .grid{grid-template-columns:1.3fr 1fr 1fr 1fr}
+.geri .pics{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:799px){
+#mb{display:block}
+nav{position:absolute;left:0;right:0;top:100%;background:var(--w);border-bottom:4px solid var(--y);display:none}
+nav.open{display:block}
+nav ul{flex-direction:column;padding:10px 4%}
+.bar img{height:50px}
+section{padding:48px 0}
+}
+.i{width:1.2em;height:1.2em;fill:currentColor;vertical-align:-.22em;margin-right:.5em;flex:none}
+.btn.wa{right:16px;bottom:16px;width:62px;height:62px;padding:0;border-radius:50%;background:#25D366;border-color:#fff;color:#fff;display:grid;place-items:center}
+.btn.wa .i{width:34px;height:34px;margin:0}
+footer .ct{display:grid;gap:12px}
+footer .ct li{display:flex;gap:10px;align-items:flex-start}
+footer .ct .i{width:1.3em;height:1.3em;margin:.15em 0 0;color:var(--y)}
+footer .btn{margin-top:4px;font-size:.95rem;padding:11px 20px}
+footer .btn .i{color:inherit;margin:0 .5em 0 0}
+footer .btn.o{color:var(--w);border-color:var(--y)}
+.contact .btn{display:inline-flex;align-items:center}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3"/></symbol>
+<symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+<symbol id="i-nav" viewBox="0 0 24 24"><path d="M21 3L3 10.5l7.2 2.3L12.5 21z"/></symbol>
+<symbol id="i-g" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></symbol>
+</defs></svg>
+
+<header>
+<div class="wrap bar">
+<a href="#inicio" aria-label="Grupo Baby Fraldas Jabaquara, início"><img src="logo.jpeg" alt="Logotipo Grupo Baby Fraldas Jabaquara"></a>
+<button id="mb" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu" aria-label="Principal">
+<ul>
+<li><a href="#inicio">Início</a></li>
+<li><a href="#produtos">Produtos</a></li>
+<li><a href="#infantil">Linha infantil</a></li>
+<li><a href="#geriatrica">Linha geriátrica</a></li>
+<li><a href="#sobre">Sobre nós</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="wrap">
+<div>
+<h1>Grupo Baby Fraldas Jabaquara</h1>
+<p>Qualidade, variedade e cuidado em cada fase da vida.</p>
+<div class="btns">
+<a class="btn" data-wa href="#contato"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Falar no WhatsApp</a>
+<a class="btn o" href="#produtos">Ver produtos</a>
+</div>
+</div>
+<figure><img src="loja.jpeg" alt="Fachada da loja Grupo Baby Fraldas Jabaquara"></figure>
+</div>
+</section>
+
+<section id="produtos">
+<div class="wrap">
+<h2>Muita variedade em um só lugar</h2>
+<p>Fraldas, mamadeiras e itens de higiene organizados para você encontrar rápido o que precisa.</p>
+<div class="pics c2" style="margin-top:24px">
+<img src="produtos2.jpeg" alt="Prateleiras com produtos da loja">
+<img src="produtos3.jpeg" alt="Vitrine com variedade de produtos">
+</div>
+</div>
+</section>
+
+<section class="alt" id="sobre">
+<div class="wrap">
+<h2>Sobre nós</h2>
+<p style="max-width:62ch">O Grupo Baby Fraldas Jabaquara é especializado em produtos infantis e geriátricos. Trabalhamos com ampla variedade, produtos de qualidade e atendimento atencioso, com compromisso com cada cliente.</p>
+<div class="grid g3" style="margin-top:24px">
+<div class="box"><h3>Variedade</h3><p>Muitos tamanhos, modelos e marcas para cada necessidade.</p></div>
+<div class="box"><h3>Qualidade</h3><p>Produtos de marcas conhecidas para higiene e proteção.</p></div>
+<div class="box"><h3>Atendimento</h3><p>Equipe pronta para ajudar você a escolher bem.</p></div>
+</div>
+</div>
+</section>
+
+<section id="infantil">
+<div class="wrap two">
+<div>
+<h2>Linha infantil</h2>
+<p>Tudo para o dia a dia do bebê, com opções para cada fase.</p>
+<ul class="ticks">
+<li>Fraldas infantis</li>
+<li>Mamadeiras</li>
+<li>Acessórios infantis</li>
+<li>Produtos para cuidados com bebês</li>
+</ul>
+<a class="btn y" data-wa href="#contato"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Perguntar pelo WhatsApp</a>
+</div>
+<img src="mamadeiras.jpeg" alt="Mamadeiras e acessórios infantis" style="border-radius:18px;border:3px solid var(--p)">
+</div>
+</section>
+
+<section class="geri" id="geriatrica">
+<div class="wrap">
+<h2>Linha geriátrica</h2>
+<p style="max-width:62ch">Produtos para higiene, proteção e cuidados pessoais. Há variedade de tamanhos, modelos e opções para homens e mulheres, de diferentes biotipos e necessidades.</p>
+<ul class="brands" aria-label="Marcas">
+<li>Tena</li><li>Plenitud</li><li>Higifral</li><li>Vida Nova</li>
+</ul>
+<div class="pics">
+<img src="geriátricas.jpeg" alt="Fraldas geriátricas">
+<img src="geriátrica2.jpeg" alt="Produtos geriátricos, modelo 2">
+<img src="geriátrica3.jpeg" alt="Produtos geriátricos, modelo 3">
+<img src="geriátrica4.jpeg" alt="Produtos geriátricos, modelo 4">
+</div>
+</div>
+</section>
+
+<section class="home" id="domiciliar">
+<div class="wrap">
+<h2>ATENDIMENTO DOMICILIAR</h2>
+<p>Consulte a loja e saiba como receber seus produtos em casa.</p>
+<a class="btn y" data-wa href="#contato"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Consultar pelo WhatsApp</a>
+</div>
+</section>
+
+<section id="especializado">
+<div class="wrap">
+<h2>Atendimento especializado</h2>
+<p>Atendemos com confiança e profissionalismo quem cuida de muita gente.</p>
+<div class="grid g4" style="margin-top:24px">
+<div class="box"><h3>Clínicas</h3></div>
+<div class="box"><h3>Casas de repouso</h3></div>
+<div class="box"><h3>Instituições</h3></div>
+<div class="box"><h3>Clientes particulares</h3></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="loja">
+<div class="wrap two rev">
+<div>
+<h2>Nossa loja</h2>
+<p>Ambiente organizado, produtos à vista e equipe pronta para atender. Venha conhecer.</p>
+</div>
+<img src="loja.jpeg" alt="Loja Grupo Baby Fraldas Jabaquara por fora" style="border-radius:18px;border:3px solid var(--p)">
+</div>
+</section>
+
+<section id="avaliacoes">
+<div class="wrap" style="text-align:center">
+<h2>Avaliações no Google</h2>
+<p style="margin-bottom:20px">Veja o que os clientes dizem sobre a loja.</p>
+<a class="btn y" data-g target="_blank" rel="noopener" href="#contato" style="display:inline-flex;align-items:center"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg>AVALIE NOSSA LOJA</a>
+</div>
+</section>
+
+<section class="alt contact" id="contato">
+<div class="wrap">
+<h2>Contato e localização</h2>
+<dl>
+<div data-row="tel"><dt>Telefone fixo</dt><dd><a data-tel data-fill href="#"></a></dd></div>
+<div data-row="wa"><dt>WhatsApp</dt><dd><a data-wa data-fill href="#"></a></dd></div>
+<div data-row="addr"><dt>Endereço</dt><dd data-addr></dd></div>
+</dl>
+<div class="btns">
+<a class="btn y" data-wa href="#contato"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+<a class="btn" data-tel href="#contato"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Ligar</a>
+<a class="btn y" data-map target="_blank" rel="noopener" href="#contato"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>COMO CHEGAR</a>
+<a class="btn o" data-ig target="_blank" rel="noopener" href="#contato"><svg class="i" aria-hidden="true"><use href="#i-ig"/></svg>SIGA-NOS NO INSTAGRAM</a>
+<a class="btn o" data-g target="_blank" rel="noopener" href="#contato"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg>AVALIE NOSSA LOJA</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="grid">
+<div>
+<img src="logo.jpeg" alt="Logotipo Grupo Baby Fraldas Jabaquara">
+<p style="margin-top:12px"><strong>Grupo Baby Fraldas Jabaquara</strong><br>Produtos infantis e geriátricos.</p>
+</div>
+<div><h3>Navegação</h3><ul class="ct">
+<li><svg class="i" aria-hidden="true"><use href="#i-nav"/></svg><a href="#produtos">Produtos</a></li><li><svg class="i" aria-hidden="true"><use href="#i-nav"/></svg><a href="#infantil">Linha infantil</a></li><li><svg class="i" aria-hidden="true"><use href="#i-nav"/></svg><a href="#geriatrica">Linha geriátrica</a></li><li><svg class="i" aria-hidden="true"><use href="#i-nav"/></svg><a href="#sobre">Sobre nós</a></li><li><svg class="i" aria-hidden="true"><use href="#i-nav"/></svg><a href="#contato">Contato</a></li></ul></div>
+<div><h3>Contatos</h3><ul class="ct">
+<li data-row="wa"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp<br><a data-wa data-fill href="#contato"></a></span></li>
+<li data-row="tel"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg><span>Telefone fixo<br><a data-tel data-fill href="#contato"></a></span></li>
+<li data-row="addr"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span data-addr></span></li>
+</ul>
+<a class="btn y" data-map target="_blank" rel="noopener" href="#contato"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>COMO CHEGAR</a></div>
+<div><h3>Redes e avaliações</h3><ul class="ct">
+<li><svg class="i" aria-hidden="true"><use href="#i-ig"/></svg><a data-ig target="_blank" rel="noopener" href="#contato">Instagram</a></li>
+<li><svg class="i" aria-hidden="true"><use href="#i-g"/></svg><a data-g target="_blank" rel="noopener" href="#contato">Avalie no Google</a></li></ul></div>
+</div>
+<p class="copy">© <span id="ano"></span> Grupo Baby Fraldas Jabaquara. Todos os direitos reservados.</p>
+</div>
+</footer>
+
+<a class="btn y wa" data-wa href="#contato" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<script>
+/* DADOS COMERCIAIS. Campo vazio esconde o botão ou linha correspondente. */
+var DADOS={
+whatsapp:"5511993521928",
+whatsappTexto:"(11) 99352-1928",
+telefone:"1143230059",
+telefoneTexto:"(11) 4323-0059",
+endereco:"",      /* preencha com o endereço completo para exibi-lo no site */
+maps:"https://www.google.com/maps/dir/?api=1&destination=Grupo%20Baby%20Fraldas%20Jabaquara&destination_place_id=ChIJPxjYh5RbzpQRKwkSCTOuSUU",
+instagram:"https://www.instagram.com/grupobabyfraldas?xtok=OTFydzRlZWZoaDNx",
+google:"https://search.google.com/local/writereview?placeid=ChIJPxjYh5RbzpQRKwkSCTOuSUU",
+mensagem:"Olá! Conheci a Grupo Baby Fraldas Jabaquara pelo site e gostaria de receber informações sobre os produtos e condições de atendimento."
+};
+(function(){
+var d=DADOS,q=function(s){return document.querySelectorAll(s)};
+function set(sel,href){q(sel).forEach(function(a){if(!href)a.classList.add("hide");else a.href=href})}
+set("[data-wa]",d.whatsapp?"https://wa.me/"+d.whatsapp+"?text="+encodeURIComponent(d.mensagem):"");
+set("[data-tel]",d.telefone?"tel:+55"+d.telefone:"");
+set("[data-map]",d.maps);set("[data-ig]",d.instagram);set("[data-g]",d.google);
+q("a[data-wa][data-fill]").forEach(function(a){a.textContent=d.whatsappTexto});
+q("a[data-tel][data-fill]").forEach(function(a){a.textContent=d.telefoneTexto});
+q("[data-addr]").forEach(function(e){e.textContent=d.endereco});
+[["tel",d.telefone],["addr",d.endereco],["wa",d.whatsapp]].forEach(function(r){
+if(!r[1])q('[data-row="'+r[0]+'"]').forEach(function(e){e.classList.add("hide")})});
+document.getElementById("ano").textContent=new Date().getFullYear();
+var b=document.getElementById("mb"),n=document.getElementById("menu");
+b.onclick=function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)};
+n.onclick=function(e){if(e.target.tagName==="A"){n.classList.remove("open");b.setAttribute("aria-expanded",false)}};
+/* Imagens com acento: tenta outras formas de gravar o nome se a primeira falhar */
+document.querySelectorAll("img").forEach(function(img){
+var o=img.getAttribute("src");if(!/[^\x00-\x7F]/.test(o))return;
+var c=[o.normalize("NFD"),o.normalize("NFC"),o.normalize("NFD").replace(/[\u0300-\u036f]/g,"")],i=0;
+function next(){if(i<c.length)img.src=c[i++]}
+img.addEventListener("error",next);
+if(img.complete&&img.naturalWidth===0)next();
+});
+})();
+</script>
+</body>
+</html>
